@@ -26,7 +26,9 @@ useradd ansadmin
 passwd ansadmin
 ```
 4. Below command grant sudo access to ansadmin user. But we strongly recommended using "visudo" command if you are aware vi or nano editor. (on Control node and Managed host)
-```echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers```
+```
+echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+```
 5. Log in as a ansadmin user on master and generate ssh key (on Control node)
 ```
 ssh-keygen

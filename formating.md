@@ -24,4 +24,6 @@ yum install python-pip
 8. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it.
 ## Validation test
 1. Run ansible command as ansadmin user it should be successful (Master)
-```ansible all -m ping```
+```
+ansible all -m ping
+```
